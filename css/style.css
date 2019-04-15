@@ -1,0 +1,90 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/************************************************* BODY *************************************************/
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+/************************************************* HEADER *************************************************/
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #252932;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+/********************************* HEADER-1 *********************************/
+
+    .element-header-1{
+        flex: 1 1 auto; 
+    }   
+
+        .element-header-1 a{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        /*LOGO*/
+        .element-header-1 img{
+            width: 250PX;
+            height: 100PX;
+        }
+
+/********************************* HEADER-2 *********************************/
+
+    .element-header-2{
+        display: flex;
+        align-items: center;  
+        justify-content: flex-end;
+    }
+
+        /*MENU*/
+        .menu{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+            /*ENLACES*/
+            .menu a{
+                color: #f2f2f2;
+                display: block;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50px;
+            }
+
+            .menu a:hover{
+                background: #f56f3a;
+            }
+
+ /************************************************* MAIN *************************************************/
+
+ main{
+     background-color: #f2f2f2;
+ }
+
+ /************************************************* FOOTER *************************************************/
+
+ footer{
+     background-color: #252932;
+     color: #f2f2f2;
+ }

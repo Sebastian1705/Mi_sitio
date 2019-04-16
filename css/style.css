@@ -23,8 +23,9 @@ header{
     background-color: #252932;
     justify-content: center;
     align-content: center;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
+    
 }
 
 /********************************* HEADER-1 *********************************/
@@ -42,8 +43,8 @@ header{
 
         /*LOGO*/
         .element-header-1 img{
-            width: 250PX;
-            height: 100PX;
+           width: 250px;
+           height: 100px;
         }
 
 /********************************* HEADER-2 *********************************/
@@ -123,6 +124,7 @@ header{
 
             .element-footer-1 p{
                 padding: 5px;
+                font-size: 12px;
             }
 
             .mail{
@@ -132,26 +134,74 @@ header{
 
                 .mail a{
                     text-decoration: none;
-                    font-size: 16px;
+                    font-size: 12px;
                     color: #f2f2f2;
                     padding: 5px;
                 }
 
+                .mail a:hover{
+                    color: #00aeef; 
+                }
+
             .redes{
-                padding: 20px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
             }
 
                 .redes a{
+                    display: block;
                     text-decoration: none;
                     font-size: 16px;
                     color: #f2f2f2;
-                    padding: 20px 20px;
+                    padding: 10px 20px;
                 }
 
-
+                .redes a:hover{
+                    color: #00aeef;
+                }
 
 /********************************* FORMULARIO *********************************/
 
-    .element-footer-1{
-            
+    .element-footer-2{
+        flex: 1 1 auto;  
+        align-items: center;
+        justify-content: center;
     }
+
+        form{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .element-footer-2 input[type=text], textarea{
+            width: 60%;
+            padding: 5px;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 10px;
+            background-color: #252932;
+            color: #f2f2f2;
+
+        }
+
+        .element-footer-2 input[type=button] {
+            width: 60%;
+            padding: 5px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid #f2f2f2;
+            background-color: #252932;
+            color: #f2f2f2;
+        }
+
+        .element-footer-2 input[type=button]:hover {
+            background-color: #00aeef;
+        } 

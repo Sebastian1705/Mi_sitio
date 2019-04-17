@@ -21,62 +21,60 @@ header{
     display: flex;
     flex-flow: row wrap;
     background-color: #252932;
-    justify-content: center;
-    align-content: center;
     /* position: fixed; */
-    width: 100%;
-    
+    width: 100%;    
 }
 
 /********************************* HEADER-1 *********************************/
 
     .element-header-1{
-        flex: 1 1 auto; 
+        flex: 1 1 auto;
+        align-self: center;
     }   
 
         .element-header-1 a{
             display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
+            align-items: center;
         }
-
-        /*LOGO*/
-        .element-header-1 img{
-           width: 250px;
-           height: 100px;
-        }
+            .element-header-1 a img{
+                width: 250px;
+                height: 100px;
+            }
 
 /********************************* HEADER-2 *********************************/
 
     .element-header-2{
-        display: flex;
-        align-items: center;  
-        justify-content: flex-end;
+        flex: 1 1 auto;
+        align-self: center;
     }
 
-        /*MENU*/
         .menu{
             display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
+            flex-flow: column wrap;
+            align-content: flex-end;
         }
 
-            /*ENLACES*/
-            .menu a{
-                color: #f2f2f2;
-                display: block;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                border-radius: 50px;
+            .menu ul{
+                display: flex;
+                flex-flow: row wrap;
             }
 
-            .menu a:hover{
-                color: #f56f3a;
-                font-size: 1.2rem;
-            }
+                .menu ul li{
+                    list-style: none;
+                    flex: 1 1 auto;
+                }
+
+                    .menu ul li a{
+                        color: #f2f2f2;
+                        text-decoration: none;
+                        padding: 10px;
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .menu ul li a:hover{
+                        color: #f56f3a;
+                    }
 
  /************************************************* MAIN *************************************************/
 
@@ -93,8 +91,6 @@ header{
         background-size: cover;
         padding: 400px;
     }
-
-
 
  /************************************************* FOOTER *************************************************/
 

@@ -1,280 +1,321 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+/************************************************************ RESETEO DE VALORES ************************************************************/
 
 *{
-    padding: 0px;
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
-/************************************************* BODY *************************************************/
+/************************************************************ BODY ************************************************************/
+
+body{
+    background-color: #f2f2f2;;
+}
+
+/************************************************************ CONTAINER ************************************************************/
 
 .container{
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
-    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:    "header header header"
+                            "main main main"
+                            "footer footer footer";
+                            
 }
 
-/************************************************* HEADER *************************************************/
-
-header{
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #252932;
-    /* position: fixed; */
-    width: 100%;    
-}
-
-/********************************* HEADER-1 *********************************/
-
-    .element-header-1{
-        flex: 1 1 auto;
-        align-self: center;
-    }   
-
-        .element-header-1 a{
-            display: flex;
-            align-items: center;
-        }
-            .element-header-1 a img{
-                width: 375px;
-                height: 150px;
-            }
-
-/********************************* HEADER-2 *********************************/
-
-    .element-header-2{
-        flex: 1 1 auto;
-        align-self: center;
-    }
-
-        .menu{
-            display: flex;
-            flex-flow: column wrap;
-            align-content: flex-end;
-        }
-
-            .menu ul{
-                display: flex;
-                flex-flow: row wrap;
-            }
-
-                .menu ul li{
-                    list-style: none;
-                    flex: 1 1 auto;
-                }
-
-                    .menu ul li a{
-                        color: #f2f2f2;
-                        text-decoration: none;
-                        padding: 10px;
-                        display: block;
-                        text-align: center;
-                    }
-
-                    .menu ul li a:hover{
-                        color: #f56f3a;
-                    }
-
-/************************************************* MAIN *************************************************/
-
- main{
-     background-color: #f2f2f2;
- }
-
-/********************************* MAIN-1 *********************************/
-
-    .element-main-1{
-        background-image: url("../image/pc-3.jpeg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 400px;
-    }
-
-/********************************* MAIN-2 *********************************/
-
-.element-main-2{
-    height: 100vh;
-}
-
-/********************************* MAIN-3 *********************************/
-
-.element-main-3{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-}
-
-    .academic{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-        h2{
-            font-size: 50px;
-            padding: 20px;
-            font-weight: bold;
-            overflow: auto;
-        }
-
-        .inst{
-            font-size: 30px;
-            padding: 20px;
-        }
-
-        .study{
-            font-size: 25px;
-            padding: 20px;
-            font-weight: bold;
-        }
-
-        .date{
-            font-size: 20px;
-            padding: 20px;
-            font-style: italic;
-        }   
-
-
-    .img-academic{
-        background-image: url("/image/pc-2.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-/********************************* MAIN-4 *********************************/
+/************************************************************ HEADER ************************************************************/
     
-    .element-main-4{
-        height: 100vh;
-    }
-
-/********************************* MAIN-5 *********************************/
-
-.element-main-5{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    .extra{
-        font-size: 50px;
-        padding: 40px;
-        font-family: 'Great Vibes', cursive;
-        text-align: center;
-    }
-
-/************************************************* FOOTER *************************************************/
-
- footer{
-    background-color: #252932;
-    color: #f2f2f2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/********************************* CONTACTO *********************************/
-
-    .element-footer-1{
+    .container .header{
+        background:#252932;
+        color: #fff;
+        grid-area: header;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
-        .element-footer-1 section{
-            text-align: center;
+
+/************************************************************ NOMBRE Y LOGO ************************************************************/
+        
+        .element-header-1{
+            flex: 1 1 auto;
         }
 
-            .element-footer-1 h2{
-                padding: 10px;
+            .element-header-1 img{
+                width: 100px;
+                vertical-align: top;
+            }
+
+            .element-header-1 a{
+                color: white;
+                text-decoration: none;
+                line-height: 100px;
                 font-size: 30px;
             }
 
-            .element-footer-1 p{
-                padding: 5px;
-                font-size: 12px;
-            }
+/************************************************************ MENU ************************************************************/
 
-            .mail{
+        .element-header-2{
+            flex:  1 1 auto;
+        }
+            .element-header-2 .menu{
                 display: flex;
                 flex-flow: column wrap;
+                align-content: flex-end;
+                width: 100%;
             }
 
-                .mail a{
-                    text-decoration: none;
-                    font-size: 12px;
-                    color: #f2f2f2;
-                    padding: 5px;
+                .element-header-2 .menu ul{
+                    display: flex;
+                    flex-flow: row wrap;
                 }
 
-                .mail a:hover{
-                    color: #00aeef; 
-                }
+                    .element-header-2 .menu ul li{
+                        list-style: none;
+                        flex: 1 1 auto;
+                    }
 
-            .redes{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-            }
+                        .element-header-2 .menu ul li a{
+                            color: white;
+                            text-decoration: none;
+                            padding: 10px;
+                            display: block;
+                            text-align: center; 
+                        }
 
-                .redes a{
-                    display: block;
-                    text-decoration: none;
-                    font-size: 16px;
-                    color: #f2f2f2;
-                    padding: 10px 20px;
-                }
+                        .element-header-2 .menu ul li a:hover{
+                            color: #f56f3a;
+                        }
 
-                .redes a:hover{
-                    color: #00aeef;
-                }
-
-/********************************* FORMULARIO *********************************/
-
-    .element-footer-2{
-        flex: 1 1 auto;  
-        align-items: center;
-        justify-content: center;
+/************************************************************ MAIN ************************************************************/
+    .container .main{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:    "img-fixed img-fixed"
+                                "about about"
+                                "experience experience"
+                                "academic academic"
+                                "skills skills"
+                                "extra extra";
     }
 
-        form{
+
+/************************************************************ IMAGEN FIJA ************************************************************/
+        
+        .main .img-fixed{
+            grid-area: img-fixed;
+            background-image: url("../image/pc-3.jpeg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 400px;
+        }
+
+/************************************************************ SOBRE MI ************************************************************/
+        
+        .main .about{
+            grid-area: about;
+            height: 100vh;
+            background-color: aquamarine;
+        }
+
+/************************************************************ EXPERIENCIA ************************************************************/
+        
+        .main .experience{
+            grid-area: experience;
+            height: 100vh;
+            background-color: cadetblue;
+        }
+
+/************************************************************ FORMACION ************************************************************/
+
+        .main .academic{
+            grid-area: academic;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 100vh;
+        }
+            .academic-text{
+                grid-column: 1/2;
+                align-self: center;
+            }
+
+                .academic-text h2{
+                    font-size: 50px;
+                    padding: 20px;
+                    font-weight: bold;
+                    overflow: auto;
+                }
+        
+                .academic-text .inst{
+                    font-size: 30px;
+                    padding: 20px;
+                }
+        
+                .academic-text .study{
+                    font-size: 25px;
+                    padding: 20px;
+                    font-weight: bold;
+                }
+        
+                .academic-text .date{
+                    font-size: 20px;
+                    padding: 20px;
+                    font-style: italic;
+                }   
+
+            .academic-img{
+                grid-column: 2/3;
+                background-image: url("../image/pc-4.jpeg")
+            }
+    
+/************************************************************ HABILIDADES ************************************************************/
+
+        .main .skills{
+            grid-area: skills;
+            height: 100vh;
+            background-color: blue;
+        }
+
+/************************************************************ EXTRA ************************************************************/
+
+        .main .extra{
+            grid-area: extra;
+            height: 100vh;
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: row wrap;
             align-items: center;
-            padding: 10px;
+            justify-content: center;
         }
         
-        .element-footer-2 input[type=text], textarea{
-            width: 60%;
-            padding: 5px;
-            margin: 4px 0;
-            display: inline-block;
-            border: 1px solid #f2f2f2;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 10px;
-            background-color: #252932;
-            color: #f2f2f2;
+            .extra-frase{
+                font-size: 3rem;
+                padding: 40px;
+                font-family: 'Great Vibes', cursive;
+                text-align: center;
+            }
 
+            .extra-autor{
+                font-size: 2rem;
+                padding: 40px;
+                font-family: 'Great Vibes', cursive;
+                text-align: center;
+            }
+
+
+/************************************************************ FOOTER ************************************************************/
+
+    .container .footer{
+        grid-area: footer;
+        background:#252932;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "contact form";
+    }
+
+
+/************************************************************ CONTACTO ************************************************************/
+
+        .element-footer-1{
+            grid-area: contact;
+            
         }
 
-        .element-footer-2 input[type=button] {
-            width: 60%;
-            padding: 5px;
-            margin: 4px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            border: 1px solid #f2f2f2;
-            background-color: #252932;
-            color: #f2f2f2;
-        }
+            .element-footer-1 .section{
+                text-align: center;
+            }
 
-        .element-footer-2 input[type=button]:hover {
-            background-color: #00aeef;
-        } 
+                .element-footer-1 h2{
+                    padding: 10px;
+                    font-size: 30px;
+                }
+
+                .element-footer-1 p{
+                    padding: 5px;
+                    font-size: 12px;
+                }
+
+                .mail{
+                    display: flex;
+                    flex-flow: column wrap;
+                }
+
+                    .mail a{
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: white;
+                        padding: 5px;
+                    }
+
+                    .mail a:hover{
+                        color: #00aeef; 
+                    }
+
+                .redes{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                }
+
+                    .redes a{
+                        display: block;
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: white;
+                        padding: 10px 20px;
+                    }
+
+                    .redes a:hover{
+                        color: #00aeef;
+                    }
+
+
+/************************************************************ FORMULARIO ************************************************************/
+
+.element-footer-2{
+    grid-area: form;
+}
+
+    form{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .element-footer-2 input[type=text], textarea{
+        width: 60%;
+        padding: 5px;
+        margin: 4px 0;
+        display: inline-block;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 10px;
+        background-color: #252932;
+        color: #f2f2f2;
+
+    }
+
+    .element-footer-2 input[type=button] {
+        width: 60%;
+        padding: 5px;
+        margin: 4px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid #f2f2f2;
+        background-color: #252932;
+        color: #f2f2f2;
+    }
+    .element-footer-2 input[type=button]:hover {
+        background-color: #00aeef;
+    } 
+
+/************************************************************ ------ ************************************************************/

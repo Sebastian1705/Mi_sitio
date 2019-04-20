@@ -6,92 +6,104 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
-        
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <title>Sebastián Aguirre</title>
     </head>
-    <body class="container">
-        <!----------------------------- HEADER ----------------------------->
-        <header id="header">
-            <!----------------------------- LOGO ----------------------------->
-            <div class="element-header-1">
-                <a href="#"><img src="./logo/logo.png" alt=""></a>
-            </div>
-            <!----------------------------- MENU ----------------------------->
-            <div class="element-header-2">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#main"><i class="fa fa-home" aria-hidden="true"></i>  Inicio</a></li>
-                        <li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>  Experiencia</a></li>
-                        <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>  Formación</a></li>
-                        <li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i>  Habilidades</a></li>
-                        <li><a href="#footer"><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>   
-        </header>
-        <!----------------------------- MAIN ----------------------------->
-        <main id="main">
-            <!----------------------------- IMAGEN FIJA ----------------------------->
-            <section class="element-main-1"></section>
-            <!----------------------------- EXPERIENCIA ----------------------------->
-            <section class="element-main-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque odio fugit iste doloribus, magnam quae a laborum ea sapiente libero at ipsa optio soluta provident mollitia harum, commodi impedit voluptatibus.
-            </section>
-            <!----------------------------- FORMACION ----------------------------->    
-            <section class="element-main-3">
-                <div class="academic">
-                    <h2>Formación Académica</h2>
-                    <article>
-                        <p class="inst">Técnico Superior en Sistemas Informáticos</p>
-                        <p class="study">Universidad Tecnológica Nacional, Avellaneda</p>
-                        <p class="date">Junio de 2017 - Actualidad</p> 
-                    </article> 
-                    <article>
-                        <p class="inst">Bachiller en Humanidades y Ciencias Sociales</p>
-                        <p class="study">Escuela Cristiana Evangélica Argentina, Lanús Oeste</p>  
-                        <p class="date">Marzo de 2005 - Diciembre 2007</p>      
-                    </article>
+    <body>
+        <!----------------------------- CONTAINER ----------------------------->
+        <div class="container">
+            <header class="header">
+                <!----------------------------- MOMBRE Y LOGO ----------------------------->
+                <div class="element-header-1">
+                    <img src="./logo/logo.png" alt="">
+                    <a href="#">Sebastián Aguirre</a>
                 </div>
-                <div class="img-academic"></div>
-            </section>
-            <!----------------------------- HABILIDADES ----------------------------->
-            <section class="element-main-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, aut ex! Facere soluta eligendi neque ratione, culpa, dolore doloremque error harum rem odit, sapiente alias ipsum quam corporis consequatur molestiae.
-            </section>
-            <!----------------------------- EXTRA ----------------------------->
-            <section class="element-main-5">
-                <article>
-                    <p class="extra">"Si crees que puedes, ya estás a medio camino".</p>
-                    <p class="extra">Theodore Roosevelt</p>  
-                </article>
-            </section>   
-        </main>
-        <!----------------------------- FOOTER ----------------------------->
-        <footer id="footer">
-            <div class="element-footer-1">
-                <section>
-                    <h2>Contacto</h2>
-                    <p><i class="fa fa-mobile" aria-hidden="true"></i> +541137776117</p>
-                    <article class="mail">
-                        <a href="mailto:sebaaguirre2012@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> sebaaguirre2012@gmail.com</a>
-                        <a href="mailto:sebaaguirre2012@outlook.com"><i class="fa fa-envelope" aria-hidden="true"></i> sebaaguirre2012@outlook.com</a>
-                    </article>
-                    <article class="redes">
-                        <a href="https://www.facebook.com/Seba1705" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/sebaaguirre2012" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://github.com/Sebastian1705" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/seba1705" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </article> 
+                <!----------------------------- MENU ----------------------------->
+                <div class="element-header-2">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>  Inicio</a></li>
+                            <li><a href="#experience"><i class="fa fa-briefcase" aria-hidden="true"></i>  Experiencia</a></li>
+                            <li><a href="#academic"><i class="fa fa-book" aria-hidden="true"></i>  Formación</a></li>
+                            <li><a href="#skills"><i class="fa fa-laptop" aria-hidden="true"></i>  Habilidades</a></li>
+                            <li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>   
+            </header>
+            <!----------------------------- MAIN ----------------------------->
+            <main class="main">
+                <!----------------------------- IMAGEN-FIJA ----------------------------->
+                <section class="img-fixed"></section>
+                <!----------------------------- SOBRE MI ----------------------------->
+                <secttion class="about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti laborum veritatis numquam recusandae nulla illo? Placeat facilis corrupti assumenda numquam, doloribus quis quam explicabo enim quod adipisci maiores nisi?</p>
+                </secttion>
+                <!----------------------------- EXPERIENCIA ----------------------------->
+                <section class="experience" id="experience">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquam soluta, voluptatum doloremque porro tempore aperiam odio! Sapiente sint nisi voluptatem quia adipisci corporis consectetur ipsum eos error et. Obcaecati!</p>
                 </section>
-            </div>
-            <div class="element-footer-2">
-                <form action="" method="POST">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="E-mail">
-                    <textarea name="" id="" cols="40" rows="3" placeholder="Mensaje"></textarea>
-                    <input type="button" value="Enviar">
-                </form>
-            </div>
-        </footer>
+                <!----------------------------- FORMACION TEXTO ----------------------------->
+                <section class="academic" id="academic">
+                    <section class="academic-text">
+                        <h2>Formación Académica</h2>
+                        <article>
+                            <p class="inst">Técnico Superior en Sistemas Informáticos</p>
+                            <p class="study">Universidad Tecnológica Nacional, Avellaneda</p>
+                            <p class="date">Junio de 2017 - Actualidad</p> 
+                        </article>
+                       <article>
+                            <p class="inst">Bachiller en Humanidades y Ciencias Sociales</p>
+                            <p class="study">Escuela Cristiana Evangélica Argentina, Lanús Oeste</p>  
+                            <p class="date">Marzo de 2005 - Diciembre 2007</p>   
+                       </article>   
+                    </section>
+                    <!----------------------------- FORMACION IMG ----------------------------->
+                    <section class="academic-img">
+                    </section>
+                </section>
+                <!----------------------------- HABILIDADES ----------------------------->
+                <section class="skills" id="skills">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae odit ducimus molestias ad vero consequatur, blanditiis eligendi dolores et praesentium libero porro voluptatibus aliquam inventore, iusto eius recusandae pariatur maxime.</p>
+                </section>
+                <!----------------------------- EXTRA ----------------------------->
+                <section class="extra">
+                    <div>
+                        <p class="extra-frase">"Si crees que puedes, ya estás a medio camino".</p>
+                        <p class="extra-autor">Theodore Roosevelt</p>
+                    </div>
+                </section>
+            </main>
+            <!----------------------------- FOOTER ----------------------------->
+            <footer class="footer" id="contact">
+                <!----------------------------- CONTACTO ----------------------------->
+                <div class="element-footer-1">
+                        <section class="section">
+                        <h2>Contacto</h2>
+                        <p><i class="fa fa-mobile" aria-hidden="true"></i> +541137776117</p>
+                        <article class="mail">
+                            <a href="mailto:sebaaguirre2012@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> sebaaguirre2012@gmail.com</a>
+                            <a href="mailto:sebaaguirre2012@outlook.com"><i class="fa fa-envelope" aria-hidden="true"></i> sebaaguirre2012@outlook.com</a>
+                        </article>
+                        <article class="redes">
+                            <a href="https://www.facebook.com/Seba1705" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/sebaaguirre2012" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Sebastian1705" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/seba1705" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </article> 
+                    </section>
+                </div>
+                <!----------------------------- FORMULARIO ----------------------------->
+                <div class="element-footer-2">
+                    <form action="" method="POST">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="E-mail">
+                        <textarea name="" id="" cols="40" rows="3" placeholder="Mensaje"></textarea>
+                        <input type="button" value="Enviar">
+                    </form>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
